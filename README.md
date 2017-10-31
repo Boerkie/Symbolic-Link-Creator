@@ -11,6 +11,26 @@ So you just got a solid state drive and want to only add the special programs? A
 Simply drag and drop the folder you want on the your solid state on the batch file and it will do the rest.
 
 ## How to use it (for now)?
+Paste the Symbolic-Link-Creator.bat file in any location listed in you path environment varable.
+
+Click 'Start'
+Type 'cmd'
+Type 'path'
+Select any directory listed in the path. For example 'C:\WINDOWS\system32'
+Copy the slc.bat file to the selected location.
+	
+Now you can open a command promp window anywere and just type 'slc <optional argument>'.
+
+For example when you are in the parent folder of the folder you want to move, just type 'cmd' in the address bar.
+Then type 'slc %cd%\folderNameToLink', which will automaticaly kick off the slc.bat script with the folder you want to create the link for.
+
+For instance. I am in 'C:\Program Files (x86)\Origin Games' and I want to move my 'Battlefield 4' folder.
+Type cmd in address bar.
+Console will open on: C:\Program Files (x86)\Origin Games>
+
+Enter: slc %cd%"\Battlefield 4"
+Since there is a space in the name.
+And wola!
 
 ## How to create a link without this batch file?
 If it is not working for some reason, there are essentualy 3 things can do that will provide the same results.
@@ -22,3 +42,4 @@ __MKLINK /J %input% %destinatioFoldername%__
 
 ## Notes
 Remember to wrap path names in doublequotes if it contains spaces.
+You can't be in the folder you want to create the link for if it is not renamed already.
