@@ -7,10 +7,10 @@ A symbolic link, also termed a soft link, is a special kind of file that points 
 ## Why use it?
 So you just got a solid state drive and want to only add the special programs to it? An easy way to do that is to create a Symbolic Link from the program's original location, to its new location on your solid state, without and dependant software even realising the location is different.
 
-## How to use it (eventualy)?
+## How to use version 2?
 Simply drag and drop the folder you want on the your solid state on the batch file and it will do the rest.
 
-## How to use it (for now)?
+## How to use version 1?
 Paste the Symbolic-Link-Creator.bat file in any location listed in your path environment variable. I recommend renameing it to slc.bat.
 
 Click 'Start'
